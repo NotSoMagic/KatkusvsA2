@@ -1,0 +1,18 @@
+#:import menu menu
+
+MainWidget:
+
+<MainWidget>:
+    meniu: meniu
+    canvas.before:
+        Rectangle:
+            size: self.size
+            source: "images/bg1.jpg"
+    MenuWidget:
+        id: meniu
+    Label:
+        text: root.score_txt
+        font_size: dp(20)
+        font_name: "fonts/Eurostile.ttf"
+        size_hint: .18, .18
+        pos_hint: {"x": 0, "top": 1}
